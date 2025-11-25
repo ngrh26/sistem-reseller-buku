@@ -18,8 +18,8 @@
                         <div class="row">
                             <div class="col-xl-6 my-auto">
                                 <div class="d-inline-flex align-items-center gap-2 text-default badge bg-white border fs-13 rounded-pill"><span class="avatar avatar-xs avatar-rounded bg-warning"><i class="ri-flashlight-fill fs-14"></i></span>Seamless Integration</div>
-                                <h1 class="fw-semibold mt-3 landing-banner-heading">Track key metrics <br> and <span class="text-primary">optimize</span> your business</h1>
-                                <span class="d-block fs-18">Keep track of important business metrics and optimize processes to drive growth and improve efficiency.</span>
+                                <h1 class="fw-semibold mt-3 landing-banner-heading">Ayo Jadi Reseller <span class="text-primary">Buku</span> Seru Belajar Coding</h1>
+                                <span class="d-block fs-18">Temukan manfaat berharga, keuntungan nyata, serta pintu besar menuju peluang bisnis teknologi masa depan</span>
                                 <div class="btn-list banner-buttons">
                                     <a href="{{url('index')}}" class="btn btn-primary btn-lg rounded-pill btn-w-lg">Get Started for free</a>
                                     <a class="btn btn-lg btn-light border rounded-pill btn-w-lg" href="javascript:void(0);">View Demo</a>

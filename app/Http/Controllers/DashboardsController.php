@@ -9,7 +9,7 @@ class DashboardsController extends Controller
       
     public function index()
     {
-        return view('pages.dashboards.index');
+        return view('pages.dashboards.dashboard');
     }
     
     public function add_product()
@@ -84,7 +84,7 @@ class DashboardsController extends Controller
     
     public function index2()
     {
-        return view('pages.dashboards.index2');
+        return view('pages.dashboards.dashboard');
     }
     
     public function index3()

@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 /******** Dashboards ********/
 Route::get('/', function () {
-    return redirect('index'); // This will redirect '/' to '/index'
+    return redirect('landing'); // This will redirect '/' to '/index'
 });
 
 // Route::get('/', [DashboardsController::class, 'index']);
