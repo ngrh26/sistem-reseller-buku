@@ -385,7 +385,7 @@
                     <div class="container">
                         <div class="heading-section">
                             <div class="heading-subtitle">Our Pricing</div>
-                            <div class="heading-title">Choose the Plan That Fits Your Needs</div>
+                            <div class="heading-title">Pilih Paket Sesuai Kebutuhan Anda</div>
                             <div class="heading-description mb-3">
                                 Select the right fit and enjoy seamless access to all features.
                             </div>
@@ -406,26 +406,26 @@
                                     <div class="col-xl-4">
                                         <div class="card custom-card">
                                             <div class="card-body p-4 text-center">
-                                                <h5 class="fw-semibold mb-3">Basic</h5>
+                                                <h5 class="fw-semibold mb-3">Starter</h5>
                                                 <div class="d-flex align-items-end justify-content-center gap-1 mb-4">
-                                                    <h2 class="fw-semibold mb-0 lh-1 text-primary">$15</h2>
-                                                    <span class="fs-13 text-muted">/ Month</span>
+                                                    <h2 class="fw-semibold mb-0 lh-1 text-primary">Benefit</h2>
+                                                    <span class="fs-13 text-muted">/ paket</span>
                                                 </div>
                                                 <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
                                                     <li>
-                                                        Access to core features
+                                                        Minimal Order 5 buku
                                                     </li>
                                                     <li>
-                                                        5GB storage
+                                                        Modal Ringan
                                                     </li>
                                                     <li>
-                                                        Basic customer support
+                                                        Repeat Order Cepat
                                                     </li>
                                                     <li>
-                                                        1 user access
+                                                        Toolkit Promosi Lengkap
                                                     </li>
                                                     <li>
-                                                        Email notifications
+                                                        Cocok untuk Guru, Bimbel
                                                     </li>
                                                 </ul>
                                                 <div>
