@@ -41,7 +41,7 @@
                         <!-- Start::header-link|switcher-icon -->
                         <div class="btn-list d-lg-none d-block">
                             <a href="{{url('sign-up-basic')}}" class="btn btn-primary-light">
-                                Sign Up
+                                Daftar
                             </a>
                             <button class="btn btn-icon btn-success switcher-icon" data-bs-toggle="offcanvas" data-bs-target="#switcher-canvas">
                                 <i class="ri-settings-3-line"></i>

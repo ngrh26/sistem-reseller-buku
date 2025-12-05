@@ -20,26 +20,26 @@
                             <!-- Start::slide -->
                             <li class="slide">
                                 <a class="side-menu__item" href="#home">
-                                    <span class="side-menu__label">Home</span>
+                                    <span class="side-menu__label">Beranda</span>
                                 </a>
                             </li>
                             <!-- End::slide -->
                             <!-- Start::slide -->
                             <li class="slide">
-                                <a href="#feature" class="side-menu__item">
-                                    <span class="side-menu__label">Features</span>
+                                <a href="#tentangpenulis" class="side-menu__item">
+                                    <span class="side-menu__label">Tentang Penulis</span>
                                 </a>
                             </li>
                             <!-- End::slide -->
                             <!-- Start::slide -->
-                            <li class="slide">
+                        <!--    <li class="slide">
                                 <a href="#service" class="side-menu__item">
                                     <span class="side-menu__label">Services</span>
                                 </a>
-                            </li>
+                            </li> -->
                             <!-- End::slide -->
-                            <!-- Start::slide -->
-                            <li class="slide has-sub">
+                            <!-- Start::slide --> 
+                        <!--    <li class="slide has-sub">
                                 <a href="javascript:void(0);" class="side-menu__item">
                                     <span class="side-menu__label">Pages</span>
                                     <i class="fe fe-chevron-right side-menu__angle"></i>
@@ -76,19 +76,26 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>   -->
                             <!-- End::slide -->
                             <!-- Start::slide -->
                             <li class="slide">
                                 <a href="#price" class="side-menu__item">
-                                    <span class="side-menu__label">Subscription</span>
+                                    <span class="side-menu__label">Pilihan Paket</span>
                                 </a>
                             </li>
                             <!-- End::slide -->
                             <!-- Start::slide -->
                             <li class="slide">
-                                <a href="#contactus" class="side-menu__item">
-                                    <span class="side-menu__label">Contact Us</span>
+                                <a href="#faq" class="side-menu__item">
+                                    <span class="side-menu__label">FAQ's</span>
+                                </a>
+                            </li>
+                            <!-- End::slide --> 
+                            <!-- Start::slide -->
+                            <li class="slide">
+                                <a href="#hubungikami" class="side-menu__item">
+                                    <span class="side-menu__label">Hubungi Kami</span>
                                 </a>
                             </li>
                             <!-- End::slide -->
@@ -97,7 +104,7 @@
                         <div class="d-lg-flex d-none align-items-center">
                             <div class="btn-list d-xl-flex d-none">
                                 <a href="{{url('sign-in-basic')}}" class="btn btn-wave btn-primary border">
-                                    Login / Register
+                                    Masuk / Daftar
                                 </a>
                             </div>
                             

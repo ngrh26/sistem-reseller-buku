@@ -105,7 +105,7 @@
                                                         aria-labelledby="headingcustomicon2Two"
                                                         data-bs-parent="#accordionFAQ1">
                                                         <div class="accordion-body">
-                                                            Click on the "Sign Up" button, fill in your details, and verify your email.
+                                                            Click on the "Daftar" button, fill in your details, and verify your email.
                                                         </div>
                                                     </div>
                                                 </div>

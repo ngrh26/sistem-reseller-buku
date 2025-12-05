@@ -12,31 +12,134 @@
                 <!-- Start:: Landing Banner -->
                 <div class="landing-banner" id="home">
                     <div class="banner-image-container">
-                        <img src="{{asset('build/assets/images/media/backgrounds/5.png')}}" alt="">
+                        <img src="{{asset('build/assets/images/media/backgrounds/buku-landing.png')}}" alt="">
                     </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6 my-auto">
                                 <div class="d-inline-flex align-items-center gap-2 text-default badge bg-white border fs-13 rounded-pill"><span class="avatar avatar-xs avatar-rounded bg-warning"><i class="ri-flashlight-fill fs-14"></i></span>Seamless Integration</div>
                                 <h1 class="fw-semibold mt-3 landing-banner-heading">Ayo Jadi Reseller <span class="text-primary">Buku</span> Seru Belajar Coding</h1>
-                                <span class="d-block fs-18">Temukan manfaat berharga, keuntungan nyata, serta pintu besar menuju peluang bisnis teknologi masa depan</span>
+                                <span class="d-block fs-18">Bergabung sebagai reseller Seru Belajar Coding & AI itu sangat mudah. Kami sudah menyiapkan sistem yang jelas, transparan, dan menguntungkan bagi semua mitra.<br>Tidak perlu pengalaman khusus, siapa pun bisa memulainya—guru, orang tua, komunitas belajar, bahkan toko buku atau lembaga pendidikan.</span>
                                 <div class="btn-list banner-buttons">
-                                    <a href="{{url('index')}}" class="btn btn-primary btn-lg rounded-pill btn-w-lg">Get Started for free</a>
-                                    <a class="btn btn-lg btn-light border rounded-pill btn-w-lg" href="javascript:void(0);">View Demo</a>
+                                    <a href="{{url('sign-up-basic')}}" class="btn btn-primary btn-lg rounded-pill btn-w-lg">Gabung Sekarang</a>
+                            <!--    <a class="btn btn-lg btn-light border rounded-pill btn-w-lg" href="javascript:void(0);">View Demo</a> -->
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="banner-main-img text-end d-xl-block d-none">
-                                    <img src="{{asset('build/assets/images/media/backgrounds/7.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('build/assets/images/media/backgrounds/buku-landing.png')}}" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- End:: Landing Banner -->
+                <!-- Start:: Tentang Penulis -->
+                <section class="section" id="tentangpenulis">
+                    <div class="container">
+                        <div class="heading-section">
+                            <div class="heading-subtitle">Tentang Penulis</div>
+                            <div class="heading-title">Kenalan dulu yuk!</div>
+                            <div class="heading-description">
+                                Ini dia sosok kreatif di balik setiap halaman, <br> yang bikin belajar coding jadi lebih asik!
+                            </div> 
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card custom-card">
+                                    <img src="{{asset('build/assets/images/faces/team/f-yusep.png')}}" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h6 class="fw-semibold mb-0">
+                                            Yusep Maulana, S.Kom., M.Kom., MBA
+                                        </h6>
+                                        <span class="text-muted fs-13">Akademisi, praktisi Data Science & AI, sekaligus penggiat literasi digital di Indonesia. Dikenal dengan identitas @oyusep, ia aktif mengajar di berbagai perguruan tinggi, menjadi mentor bootcamp, serta narasumber di forum nasional. Yusep juga mendirikan platform-platform edukasi digital seperti e-belajar dan kawaldata.</span>
+                                        <div class="btn-list mt-3">
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-facebook-circle-fill lh-1"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-twitter-x-fill lh-1"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-linkedin-box-fill lh-1"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card custom-card">
+                                    <img src="{{asset('build/assets/images/faces/team/f-woko.png')}}" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h6 class="fw-semibold mb-0">
+                                            Woko Hadi Pristiawan, S.Kom. (Boy Hadi)
+                                        </h6>
+                                        <span class="text-muted fs-13">Pakar IT dan digital strategist dengan pengalaman lebih dari 10 tahun. Ia mendirikan platform e-belajar.id dan bosukm.com yang telah membantu ribuan pelajar dan UMKM. Penerima penghargaan Intel APAC IT Solution Winner, Boy Hadi juga aktif dalam pemberdayaan masyarakat melalui yayasan dan program digitalisasi UMKM.</span>
+                                        <div class="btn-list mt-3">
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-facebook-circle-fill lh-1"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-twitter-x-fill lh-1"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-linkedin-box-fill lh-1"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card custom-card">
+                                    <img src="{{asset('build/assets/images/faces/team/f-abdul.png')}}" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h6 class="fw-semibold mb-0">
+                                            Dr. Abdul Haris Nasution, M.Sc.
+                                        </h6>
+                                        <span class="text-muted fs-13">Dosen Universitas Indonesia Mandiri dan peneliti kebijakan publik, khususnya migrasi internasional. Karyanya banyak menjadi rujukan dalam isu tenaga kerja migran di Asia-Pasifik. Beliau juga pernah menjadi profesor tamu di berbagai universitas dunia, ia kini aktif di jaringan riset internasional IRNIM.</span>
+                                        <div class="btn-list mt-3">
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-facebook-circle-fill lh-1"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-twitter-x-fill lh-1"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-linkedin-box-fill lh-1"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         <!--   <div class="col-lg-3 col-md-6">
+                                <div class="card custom-card">
+                                    <img src="{{asset('build/assets/images/faces/team/4.png')}}" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h6 class="fw-semibold mb-0">
+                                            Michael Brown
+                                        </h6>
+                                        <span class="text-muted fs-13">Lead Designer</span>
+                                        <div class="btn-list mt-3">
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-facebook-circle-fill lh-1"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-twitter-x-fill lh-1"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-icon rounded-circle border">
+                                                <i class="ri-linkedin-box-fill lh-1"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </section>
+                <!-- End:: Tentang Penulis -->
 
                 <!-- Start:: Section-1 -->
-                <section class="section">
+        <!--        <section class="section">
                     <div class="container">
                         <div class="heading-section">
                             <div class="heading-subtitle">Clients</div>
@@ -113,11 +216,11 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- End:: Section-1 -->
 
                 <!-- Start:: Section-2 -->
-                <section class="section" id="feature">
+       <!--         <section class="section" id="feature">
                     <div class="container">
                         <div class="heading-section">
                             <div class="heading-subtitle">Features</div>
@@ -264,11 +367,11 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- End:: Section-2 -->
 
                 <!-- Start:: Section-3 -->
-                <section class="section" id="service">
+        <!--        <section class="section" id="service">
                     <div class="container">
                         <div class="heading-section">
                             <div class="heading-subtitle">Services</div>
@@ -357,11 +460,11 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- End:: Section-3 -->
 
                 <!-- Start:: Buy Now Section -->
-                <section class="section section-md section-primary text-fixed-white py-5 buy-now-section">
+        <!--        <section class="section section-md section-primary text-fixed-white py-5 buy-now-section">
                     <div class="testimonials-background-container">
                         <img src="{{asset('build/assets/images/media/backgrounds/1.png')}}" alt="">
                     </div>
@@ -377,19 +480,19 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- End:: Buy Now Section -->
 
                 <!-- Start:: Section-4 -->
                 <section class="section" id="price">
                     <div class="container">
                         <div class="heading-section">
-                            <div class="heading-subtitle">Our Pricing</div>
+                            <div class="heading-subtitle">Pilihan Paket</div>
                             <div class="heading-title">Pilih Paket Sesuai Kebutuhan Anda</div>
                             <div class="heading-description mb-3">
-                                Select the right fit and enjoy seamless access to all features.
+                                Temukan paket yang pas dan nikmati kemudahan penuh dalam menjalankan bisnis reseller buku Anda.
                             </div>
-                            <div class="tab-style-1 border bg-white rounded-0 d-inline-block"> 
+                            <div class="tab-style-1 border bg-white rounded-0 d-inline-block">
                                 <ul class="nav nav-pills" role="tablist"> 
                                     <li class="nav-item" role="presentation"> 
                                         <button type="button" class="nav-link rounded-0 fw-medium active" data-bs-toggle="pill" data-bs-target="#pricing1-monthly" aria-selected="true" role="tab">Monthly</button> 
@@ -398,7 +501,7 @@
                                         <button type="button" class="nav-link rounded-0 fw-medium" data-bs-toggle="pill" data-bs-target="#pricing1-yearly" aria-selected="false" role="tab" tabindex="-1">Yearly</button> 
                                     </li> 
                                 </ul> 
-                            </div>
+                            </div> 
                         </div>
                         <div class="tab-content">
                             <div class="tab-pane show active p-0 border-0" id="pricing1-monthly" role="tabpanel">
@@ -431,7 +534,7 @@
                                                 <div>
                                                     <span class="badge bg-secondary-transparent py-1 px-3 fs-13 rounded-pill fw-normal">25% Off</span>
                                                     <div class="d-grid mt-3">
-                                                        <button class="btn btn-primary btn-lg">Choose Plan</button>
+                                                        <button class="btn btn-primary btn-lg">Gabung Sekarang</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -440,32 +543,32 @@
                                     <div class="col-xl-4">
                                         <div class="card custom-card card-bg-primary">
                                             <div class="card-body p-4 text-center">
-                                                <h5 class="fw-semibold mb-3 text-fixed-white">Pro</h5>
+                                                <h5 class="fw-semibold mb-3 text-fixed-white">Profesional</h5>
                                                 <div class="d-flex align-items-end justify-content-center gap-1 mb-4">
-                                                    <h2 class="fw-semibold mb-0 lh-1 text-fixed-white">$45</h2>
-                                                    <span class="fs-13">/ Month</span>
+                                                    <h2 class="fw-semibold mb-0 lh-1 text-fixed-white">Benefit</h2>
+                                                    <span class="fs-13">/ Paket</span>
                                                 </div>
                                                 <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
                                                     <li>
-                                                        All Basic Plan Features
+                                                        Minimal Order 20 Buku
                                                     </li>
                                                     <li>
-                                                        50GB storage
+                                                        Modal Ringan
                                                     </li>
                                                     <li>
-                                                        Priority customer support
+                                                        Repeat Order Cepat
                                                     </li>
                                                     <li>
-                                                        5 user access
+                                                        Toolkit Promosi Lengkap
                                                     </li>
                                                     <li>
-                                                        Advanced analytics
+                                                        Cocok untuk Komunitas, Toko
                                                     </li>
                                                 </ul>
                                                 <div>
                                                     <span class="badge bg-white-transparent py-1 px-3 fs-13 rounded-pill fw-normal">40% Off</span>
                                                     <div class="d-grid mt-3">
-                                                        <button class="btn btn-light btn-lg">Choose Plan</button>
+                                                        <button class="btn btn-light btn-lg">Gabung Sekarang</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -474,32 +577,32 @@
                                     <div class="col-xl-4">
                                         <div class="card custom-card">
                                             <div class="card-body p-4 text-center">
-                                                <h5 class="fw-semibold mb-3">Enterprise</h5>
+                                                <h5 class="fw-semibold mb-3">Distributor</h5>
                                                 <div class="d-flex align-items-end justify-content-center gap-1 mb-4">
-                                                    <h2 class="fw-semibold mb-0 lh-1 text-primary">$99</h2>
-                                                    <span class="fs-13 text-muted">/ Month</span>
+                                                    <h2 class="fw-semibold mb-0 lh-1 text-primary">Benefit</h2>
+                                                    <span class="fs-13 text-muted">/ Paket</span>
                                                 </div>
                                                 <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
                                                     <li>
-                                                        All Pro Plan Features
+                                                        Minimal Order 40 Buku
                                                     </li>
                                                     <li>
-                                                        Unlimited storage
+                                                        Margin Tebal
                                                     </li>
                                                     <li>
-                                                        Dedicated account manager
+                                                        Prioritas Restock
                                                     </li>
                                                     <li>
-                                                        20 user access
+                                                        Toolkit Promosi Lengkap
                                                     </li>
                                                     <li>
-                                                        Customizable workflows
+                                                        Co-Branding Materi Promosi
                                                     </li>
                                                 </ul>
                                                 <div>
                                                     <span class="badge bg-secondary-transparent py-1 px-3 fs-13 rounded-pill fw-normal">50% Off</span>
                                                     <div class="d-grid mt-3">
-                                                        <button class="btn btn-primary btn-lg">Choose Plan</button>
+                                                        <button class="btn btn-primary btn-lg">Gabung Sekarang</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -619,13 +722,13 @@
                 <!-- End:: Section-4 -->
 
                 <!-- Start:: Section-5 -->
-                <section class="section">
+                <section class="section" id="faq">
                     <div class="container">
                         <div class="heading-section">
                             <div class="heading-subtitle">FAQ's</div>
-                            <div class="heading-title">Need Help? Find Your Answers Here</div>
+                            <div class="heading-title">Butuh Bantuan?<br>Temukan Jawabannya di Sini</div>
                             <div class="heading-description">
-                                Browse through common questions to get quick solutions. We're here to help!
+                                Jelajahi berbagai pertanyaan yang sering diajukan untuk mendapatkan solusi dengan cepat. Kami siap membantu kapan saja!
                             </div>
                         </div>
                         <div class="row">
@@ -634,72 +737,72 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingcustomicon2Eleven">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon2Eleven" aria-expanded="true" aria-controls="collapsecustomicon2Eleven">
-                                                <i class="ri-layout-4-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>How do I customize my dashboard layout?
+                                                <i class="ri-layout-4-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>Bagaimana alur kerja menjadi reseller?
                                             </button>
                                         </h2>
                                         <div id="collapsecustomicon2Eleven" class="accordion-collapse collapse show" aria-labelledby="headingcustomicon2Eleven" data-bs-parent="#accordionFAQ3">
                                             <div class="accordion-body">
-                                                You can easily customize the dashboard by dragging and dropping widgets. Go to the settings menu and select 'Customize Dashboard' to rearrange the layout.
+                                                Alurnya sangat sederhana: Anda membeli produk kami → Anda melakukan promosi (menggunakan materi yang sudah kami sediakan) atau membuka sistem pre-order → Produk terjual → Anda mendapatkan keuntungan dari setiap penjualan.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingcustomicon2Twelve">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon2Twelve" aria-expanded="false" aria-controls="collapsecustomicon2Twelve">
-                                                <i class="ri-plug-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>Can I integrate third-party apps with the admin template?
+                                                <i class="ri-plug-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>Bisakah sistem reseller ini diintegrasikan dengan platform lain?
                                             </button>
                                         </h2>
                                         <div id="collapsecustomicon2Twelve" class="accordion-collapse collapse" aria-labelledby="headingcustomicon2Twelve" data-bs-parent="#accordionFAQ3">
                                             <div class="accordion-body">
-                                                Yes! Our admin template supports seamless integrations with third-party apps. You can easily connect tools like Google Analytics, CRM software, and more.
+                                                Saat ini belum tersedia fitur integrasi otomatis dengan platform lain. Namun Anda tetap bisa menggunakan sistem ini dengan mudah dengan cara menyalin link halaman penjualan dan membagikannya ke berbagai media sosial seperti WhatsApp, Facebook, atau Instagram.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingcustomicon2Thirteen">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon2Thirteen" aria-expanded="false" aria-controls="collapsecustomicon2Thirteen">
-                                                <i class="ri-phone-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>Is this admin template mobile responsive?
+                                                <i class="ri-phone-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>Apakah sistem & materi bisa diakses melalui HP?
                                             </button>
                                         </h2>
                                         <div id="collapsecustomicon2Thirteen" class="accordion-collapse collapse" aria-labelledby="headingcustomicon2Thirteen" data-bs-parent="#accordionFAQ3">
                                             <div class="accordion-body">
-                                                Absolutely! The admin template is fully responsive and optimized for mobile, ensuring that it works perfectly on smartphones and tablets.
+                                                Bisa. Seluruh panduan, katalog, hingga dashboard dapat diakses dari smartphone.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingcustomicon2Fourteen">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon2Fourteen" aria-expanded="false" aria-controls="collapsecustomicon2Fourteen">
-                                                <i class="ri-user-settings-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>How do I manage user roles and permissions?
+                                                <i class="ri-user-settings-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>Bagaimana cara mengatur akun reseller?
                                             </button>
                                         </h2>
                                         <div id="collapsecustomicon2Fourteen" class="accordion-collapse collapse" aria-labelledby="headingcustomicon2Fourteen" data-bs-parent="#accordionFAQ3">
                                             <div class="accordion-body">
-                                                You can manage user roles and permissions under the 'User Management' section. Simply assign roles like Admin, Manager, or Viewer to control access.
+                                                Setelah daftar, kamu akan mendapatkan akun khusus dan bisa mengubah profil, melihat pesanan, dan memantau hasil penjualan.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingcustomicon2Fifteen">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon2Fifteen" aria-expanded="false" aria-controls="collapsecustomicon2Fifteen">
-                                                <i class="ri-file-excel-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>Can I export data from the reports section?
+                                                <i class="ri-file-excel-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>Apakah saya bisa mengunduh laporan penjualan?
                                             </button>
                                         </h2>
                                         <div id="collapsecustomicon2Fifteen" class="accordion-collapse collapse" aria-labelledby="headingcustomicon2Fifteen" data-bs-parent="#accordionFAQ3">
                                             <div class="accordion-body">
-                                                Yes, you can easily export reports as CSV, PDF, or Excel files. Just click the export button at the top of the reports page."
+                                                Saat ini belum tersedia fitur ekspor otomatis. Namun kamu tetap bisa menyimpan laporan penjualan dengan cara screenshoot dari halaman Riwayat Pesanan di dashboard reseller.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingcustomicon2Sixteen">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecustomicon2Sixteen" aria-expanded="false" aria-controls="collapsecustomicon2Sixteen">
-                                                <i class="ri-notification-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>How do I enable notifications for updates?
+                                                <i class="ri-notification-line fw-medium avatar avatar-sm avatar-rounded bg-primary-transparent fs-5 me-2 text-primary flex-shrink-0"></i>Apakah ada notifikasi jika ada pesanan baru?
                                             </button>
                                         </h2>
                                         <div id="collapsecustomicon2Sixteen" class="accordion-collapse collapse" aria-labelledby="headingcustomicon2Sixteen" data-bs-parent="#accordionFAQ3">
                                             <div class="accordion-body">
-                                                Notifications can be enabled under the 'Settings' section. You can choose to receive real-time alerts via email or in-app for important updates.
+                                                Ada. Setiap pesanan baru akan memicu notifikasi melalui email atau WhatsApp (sesuai pengaturan kamu).
                                             </div>
                                         </div>
                                     </div>
@@ -717,10 +820,10 @@
                     </div>
                     <div class="container">
                         <div class="heading-section">
-                            <div class="heading-subtitle">Testimonials</div>
-                            <div class="heading-title">See What Our Customers Say</div>
+                            <div class="heading-subtitle">Testimoni</div>
+                            <div class="heading-title">Apa Kata Mereka?</div>
                             <div class="heading-description">
-                                Read real testimonials from customers who’ve <br> improved their business with our platform.
+                                Yuk, lihat pengalaman nyata para pengguna kami.<br> Mereka sudah ngerasain manfaat dan naiknya penjualan setelah pakai platform ini!
                             </div>
                         </div>
                         <div class="swiper pagination-dynamic testimonialSwiperService testimonials-swiper-2">
@@ -728,19 +831,19 @@
                                 <div class="swiper-slide">
                                     <div class="card custom-card testimonial-style-2-card primary border-0">
                                         <div class="card-body p-5">
-                                            <h5 class="fw-semibold mb-3">Our team’s productivity skyrocketed!</h5>
+                                            <h5 class="fw-semibold mb-3">Penghasilan saya meningkat pesat sejak jadi reseller!</h5>
                                             <div class="mb-3 text-muted">
-                                                The customizable dashboard helped us track key metrics in real-time. It’s user-friendly and has made managing our operations so much easier.
+                                                "Buku-buku dari Seru Belajar Coding selalu jadi incaran teman-teman kampus. Materinya lengkap dan mudah dijual. Saya jadi punya penghasilan tambahan tiap bulan."
                                             </div>
                                             <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
                                                 <div class="lh-1">
                                                     <span class="avatar rounded-circle me-2">
-                                                        <img src="{{asset('build/assets/images/faces/1.jpg')}}" alt="" class="img-fluid rounded-circle">
+                                                        <img src="{{asset('build/assets/images/faces/aul.webp')}}" alt="" class="img-fluid rounded-circle">
                                                     </span>
                                                 </div>
                                                 <div class="flex-fill">
-                                                    <span class="d-block fw-semibold">Sarah Johnson</span>
-                                                    <span>Operations Manager</span>
+                                                    <span class="d-block fw-semibold">Aulia Fauziah</span>
+                                                    <span>Mahasiswa Teknologi Informasi</span>
                                                 </div>
                                                 <div class="text-warning d-block ms-1">
                                                     <i class="ri-star-fill"></i>
@@ -756,19 +859,19 @@
                                 <div class="swiper-slide">
                                     <div class="card custom-card testimonial-style-2-card success border-0">
                                         <div class="card-body p-5">
-                                            <h5 class="fw-semibold mb-3">A game-changer for our workflow.</h5>
+                                            <h5 class="fw-semibold mb-3">Konversi penjualan naik drastis dari review!</h5>
                                             <div class="mb-3 text-muted">
-                                                With seamless integrations and powerful analytics, we can make faster decisions. This admin template has truly optimized our business processes.
+                                                "Saya sering review buku belajar, dan Seru Belajar Coding punya kualitas yang solid. Banyak followers yang akhirnya membeli lewat saya. Recommended!"
                                             </div>
                                             <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
                                                 <div class="lh-1">
                                                     <span class="avatar rounded-circle me-2">
-                                                        <img src="{{asset('build/assets/images/faces/10.jpg')}}" alt="" class="img-fluid rounded-circle">
+                                                        <img src="{{asset('build/assets/images/faces/fitra.jpg')}}" alt="" class="img-fluid rounded-circle">
                                                     </span>
                                                 </div>
                                                 <div class="flex-fill">
-                                                    <span class="d-block fw-semibold">James Lee</span>
-                                                    <span>Product Director</span>
+                                                    <span class="d-block fw-semibold">Fitra Idzni Irfani</span>
+                                                    <span>Content Creator Edukasi</span>
                                                 </div>
                                                 <div class="text-warning d-block ms-1">
                                                     <i class="ri-star-fill"></i>
@@ -784,19 +887,19 @@
                                 <div class="swiper-slide">
                                     <div class="card custom-card testimonial-style-2-card warning border-0">
                                         <div class="card-body p-5">
-                                            <h5 class="fw-semibold mb-3">Simple, powerful, and efficient!</h5>
+                                            <h5 class="fw-semibold mb-3">Permintaan pelanggan meningkat drastis!</h5>
                                             <div class="mb-3 text-muted">
-                                                We implemented the template across multiple teams. The ease of use and flexibility have improved how we manage data and projects daily.
+                                                "Awalnya coba-coba jadi reseller, tapi ternyata peminatnya banyak. Packaging rapi, buku berkualitas, dan pelayanan admin cepat."
                                             </div>
                                             <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
                                                 <div class="lh-1">
                                                     <span class="avatar rounded-circle me-2">
-                                                        <img src="{{asset('build/assets/images/faces/9.jpg')}}" alt="" class="img-fluid rounded-circle">
+                                                        <img src="{{asset('build/assets/images/faces/Ahmad.png')}}" alt="" class="img-fluid rounded-circle">
                                                     </span>
                                                 </div>
                                                 <div class="flex-fill">
-                                                    <span class="d-block fw-semibold">Alex Smith</span>
-                                                    <span>Project Lead</span>
+                                                    <span class="d-block fw-semibold">Ahmad</span>
+                                                    <span>Freelance Designer</span>
                                                 </div>
                                                 <div class="text-warning d-block ms-1">
                                                     <i class="ri-star-fill"></i>
@@ -812,19 +915,19 @@
                                 <div class="swiper-slide">
                                     <div class="card custom-card testimonial-style-2-card info border-0">
                                         <div class="card-body p-5">
-                                            <h5 class="fw-semibold mb-3">Effortless reporting and data management.</h5>
+                                            <h5 class="fw-semibold mb-3">Minat guru dan orang tua meningkat signifikan!</h5>
                                             <div class="mb-3 text-muted">
-                                                The real-time analytics have allowed us to monitor key performance indicators at a glance. A perfect solution for data-driven teams!
+                                                "Jadi reseller buku Seru Belajar Coding sangat membantu. Banyak guru dan orang tua yang tertarik, karena materinya jelas dan sesuai kurikulum. Penjualannya stabil setiap minggu."
                                             </div>
                                             <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
                                                 <div class="lh-1">
                                                     <span class="avatar rounded-circle me-2">
-                                                        <img src="{{asset('build/assets/images/faces/5.jpg')}}" alt="" class="img-fluid rounded-circle">
+                                                        <img src="{{asset('build/assets/images/faces/aher.jpeg')}}" alt="" class="img-fluid rounded-circle">
                                                     </span>
                                                 </div>
                                                 <div class="flex-fill">
-                                                    <span class="d-block fw-semibold">David Thompson</span>
-                                                    <span>Marketing Director</span>
+                                                    <span class="d-block fw-semibold">Hermawan Nugraha</span>
+                                                    <span>Operator</span>
                                                 </div>
                                                 <div class="text-warning d-block ms-1">
                                                     <i class="ri-star-fill"></i>
@@ -840,19 +943,19 @@
                                 <div class="swiper-slide">
                                     <div class="card custom-card testimonial-style-2-card danger border-0">
                                         <div class="card-body p-5">
-                                            <h5 class="fw-semibold mb-3">The best decision for our company.</h5>
+                                            <h5 class="fw-semibold mb-3">Belajar coding jadi terasa kayak main game!</h5>
                                             <div class="mb-3 text-muted">
-                                                "After adopting this admin template, everything is much more organized. We now have full control and visibility over our business operations.
+                                                "Sebagai gamer, saya suka hal yang praktis dan seru. Buku Seru Belajar Coding ini ringan, gampang diikuti, dan bikin saya kepikiran buat bikin game sendiri. Jualannya juga laris karena banyak teman gamer yang ikut tertarik."
                                             </div>
                                             <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
                                                 <div class="lh-1">
                                                     <span class="avatar rounded-circle me-2">
-                                                        <img src="{{asset('build/assets/images/faces/14.jpg')}}" alt="" class="img-fluid rounded-circle">
+                                                        <img src="{{asset('build/assets/images/faces/rifki-gamers.jpg')}}" alt="" class="img-fluid rounded-circle">
                                                     </span>
                                                 </div>
                                                 <div class="flex-fill">
-                                                    <span class="d-block fw-semibold">Michael Brown</span>
-                                                    <span>CEO</span>
+                                                    <span class="d-block fw-semibold">Rifki Saepudin</span>
+                                                    <span>Gamers</span>
                                                 </div>
                                                 <div class="text-warning d-block ms-1">
                                                     <i class="ri-star-fill"></i>
@@ -868,19 +971,19 @@
                                 <div class="swiper-slide">
                                     <div class="card custom-card testimonial-style-2-card teal border-0">
                                         <div class="card-body p-5">
-                                            <h5 class="fw-semibold mb-3">Made managing our business a breeze.</h5>
+                                            <h5 class="fw-semibold mb-3">Penjualan tim meningkat seperti percepatan startup!</h5>
                                             <div class="mb-3 text-muted">
-                                                The intuitive interface and powerful features have simplified our admin tasks. We can now monitor sales, track progress, and generate reports effortlessly.
+                                                "Sebagai CEO, saya selalu mencari produk edukatif yang punya nilai jual tinggi. Buku Seru Belajar Coding mudah dipasarkan, respons pembeli bagus, dan proses kerjasamanya sangat profesional."
                                             </div>
                                             <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
                                                 <div class="lh-1">
                                                     <span class="avatar rounded-circle me-2">
-                                                        <img src="{{asset('build/assets/images/faces/3.jpg')}}" alt="" class="img-fluid rounded-circle">
+                                                        <img src="{{asset('build/assets/images/faces/luthfi.jpg')}}" alt="" class="img-fluid rounded-circle">
                                                     </span>
                                                 </div>
                                                 <div class="flex-fill">
-                                                    <span class="d-block fw-semibold">Emily Clark</span>
-                                                    <span>Sales Manager</span>
+                                                    <span class="d-block fw-semibold">M Luthfi Ripaldi</span>
+                                                    <span>CEO</span>
                                                 </div>
                                                 <div class="text-warning d-block ms-1">
                                                     <i class="ri-star-fill"></i>
@@ -906,25 +1009,25 @@
                             <div class="col-lg-3 col-6">
                                 <div class="text-center stats-point one">
                                     <h4 class="fw-semibold mb-1">12,345</h4>
-                                    <div class="text-muted fs-16">Customers</div>
+                                    <div class="text-muted fs-16">Pelanggan</div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <div class="text-center stats-point two">
                                     <h4 class="fw-semibold mb-1">56,789</h4>
-                                    <div class="text-muted fs-16">Products Sold</div>
+                                    <div class="text-muted fs-16">Produk Terjual</div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <div class="text-center stats-point three">
                                     <h4 class="fw-semibold mb-1">1,234</h4>
-                                    <div class="text-muted fs-16">Projects</div>
+                                    <div class="text-muted fs-16">Proyek</div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <div class="text-center stats-point four">
                                     <h4 class="fw-semibold mb-1">98%</h4>
-                                    <div class="text-muted fs-16">Client Satisfaction Rate</div>
+                                    <div class="text-muted fs-16">Tingkat Kepuasan Pelanggan</div>
                                 </div>
                             </div>
                         </div>
@@ -933,7 +1036,7 @@
                 <!-- End:: Setion-7 -->
 
                 <!-- Start:: Section-8 -->
-                <section class="section">
+        <!--        <section class="section">
                     <div class="container">
                         <div class="heading-section">
                             <div class="heading-subtitle">Workflow</div>
@@ -990,150 +1093,46 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- End:: Section-8 -->
 
-                <!-- Start:: Section-9 -->
-                <section class="section">
-                    <div class="container">
-                        <div class="heading-section">
-                            <div class="heading-subtitle">Our Team</div>
-                            <div class="heading-title">Meet Our Expert Team</div>
-                            <div class="heading-description">
-                                Get to know the talented individuals behind our success, <br> working together to deliver exceptional results.
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card custom-card">
-                                    <img src="{{asset('build/assets/images/faces/team/1.png')}}" class="card-img-top" alt="...">
-                                    <div class="card-body text-center">
-                                        <h6 class="fw-semibold mb-0">
-                                            John Smith
-                                        </h6>
-                                        <span class="text-muted fs-13">Senior Developer</span>
-                                        <div class="btn-list mt-3">
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-facebook-circle-fill lh-1"></i>
-                                            </button>
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-twitter-x-fill lh-1"></i>
-                                            </button>
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-linkedin-box-fill lh-1"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card custom-card">
-                                    <img src="{{asset('build/assets/images/faces/team/2.png')}}" class="card-img-top" alt="...">
-                                    <div class="card-body text-center">
-                                        <h6 class="fw-semibold mb-0">
-                                            Emily Johnson
-                                        </h6>
-                                        <span class="text-muted fs-13">Product Manager</span>
-                                        <div class="btn-list mt-3">
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-facebook-circle-fill lh-1"></i>
-                                            </button>
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-twitter-x-fill lh-1"></i>
-                                            </button>
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-linkedin-box-fill lh-1"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card custom-card">
-                                    <img src="{{asset('build/assets/images/faces/team/3.png')}}" class="card-img-top" alt="...">
-                                    <div class="card-body text-center">
-                                        <h6 class="fw-semibold mb-0">
-                                            Sarah Davis
-                                        </h6>
-                                        <span class="text-muted fs-13">Marketing Specialist</span>
-                                        <div class="btn-list mt-3">
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-facebook-circle-fill lh-1"></i>
-                                            </button>
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-twitter-x-fill lh-1"></i>
-                                            </button>
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-linkedin-box-fill lh-1"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card custom-card">
-                                    <img src="{{asset('build/assets/images/faces/team/4.png')}}" class="card-img-top" alt="...">
-                                    <div class="card-body text-center">
-                                        <h6 class="fw-semibold mb-0">
-                                            Michael Brown
-                                        </h6>
-                                        <span class="text-muted fs-13">Lead Designer</span>
-                                        <div class="btn-list mt-3">
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-facebook-circle-fill lh-1"></i>
-                                            </button>
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-twitter-x-fill lh-1"></i>
-                                            </button>
-                                            <button class="btn btn-light btn-icon rounded-circle border">
-                                                <i class="ri-linkedin-box-fill lh-1"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End:: Section-9 -->
-
                 <!-- Start:: Section-10 -->
-                <section class="section" id="contactus">
+                <section class="section" id="hubungikami">
                     <div class="container">
                         <div class="heading-section">
-                            <div class="heading-subtitle">Contact Us</div>
-                            <div class="heading-title">Get in Touch With Us</div>
+                            <div class="heading-subtitle">Hubungi Kami</div>
+                            <div class="heading-title">Ayo Terhubung dengan Kami</div>
                             <div class="heading-description">
-                                Have questions or need assistance? Our team is here to help. <br> Reach out to us anytime for support or inquiries.
+                                Ada pertanyaan atau butuh bantuan? Tenang, tim kami selalu siap membantu kamu. <br> Kapan pun kamu butuh info atau support, langsung saja hubungi kami ya!
                             </div>
                         </div>
                         <div class="row gy-4 justify-content-between">
                             <div class="col-xl-6">
-                                <h6 class="fw-semibold mb-4">Get In Touch !</h6>
+                                <h6 class="fw-semibold mb-4">Hubungi Kami !</h6>
                                 <div class="row gy-3">
                                     <div class="col-xl-6">
-                                        <label for="contact-address-firstname" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" id="contact-address-firstname" placeholder="Enter Name">
+                                        <label for="contact-address-firstname" class="form-label">Nama Depan</label>
+                                        <input type="text" class="form-control" id="contact-address-firstname" placeholder="Masukkan Nama Depan">
                                     </div>
                                     <div class="col-xl-6">
-                                        <label for="contact-address-lastname" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" id="contact-address-lastname" placeholder="Enter Name">
+                                        <label for="contact-address-lastname" class="form-label">Nama Belakang</label>
+                                        <input type="text" class="form-control" id="contact-address-lastname" placeholder="Masukkan Nama Belakang">
                                     </div>
                                     <div class="col-xl-12">
-                                        <label for="contact-address-email" class="form-label">Email Id</label>
-                                        <input type="email" class="form-control" id="contact-address-email" placeholder="Enter Email Id">
+                                        <label for="contact-address-email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="contact-address-email" placeholder="Masukkan Email">
                                     </div>
                                     <div class="col-xl-12">
-                                        <label for="contact-address-phone" class="form-label">Phone No</label>
-                                        <input type="text" class="form-control" id="contact-address-phone" placeholder="Enter Phone No">
+                                        <label for="contact-address-phone" class="form-label">No Handphone/WhatsApp</label>
+                                        <input type="text" class="form-control" id="contact-address-phone" placeholder="Masukkan No Handphone/WhatsApp">
                                     </div>
                                     <div class="col-xl-12">
-                                        <label for="contact-mail-message" class="form-label">Message</label>
-                                        <textarea class="form-control" id="contact-mail-message" rows="4" placeholder="Enter Your Query ?"></textarea>
+                                        <label for="contact-mail-message" class="form-label">Pertanyaan</label>
+                                        <textarea class="form-control" id="contact-mail-message" rows="4" placeholder="Masukkan Pertanyaan"></textarea>
                                     </div>
                                 </div>
                                 <div class="d-grid mt-3">
-                                    <button class="btn btn-primary">Submit<i class="ti ti-arrow-narrow-right ms-1 align-middle"></i></button>
+                                    <button class="btn btn-primary">Kirim<i class="ti ti-arrow-narrow-right ms-1 align-middle"></i></button>
                                 </div>
                             </div>
                             <div class="col-xl-5">
@@ -1146,7 +1145,7 @@
                                                 </span>
                                             </div>
                                             <div>
-                                                <h5 class="fs-13 text-muted text-uppercase">Address :</h5>
+                                                <h5 class="fs-13 text-muted text-uppercase">Alamat :</h5>
                                                 <span class="d-block fs-12 text-muted mb-2">Visit us in person From Mon-Fri 9:00am - 6:00pm</span>
                                                 <div class="fw-semibold">123 Health Street, Suite 456
                                                     <br>Wellness City, HC 78910<br>
@@ -1162,7 +1161,7 @@
                                                 </span>
                                             </div>
                                             <div>
-                                                <h5 class="fs-13 text-muted text-uppercase">Phone Number :</h5>
+                                                <h5 class="fs-13 text-muted text-uppercase">Nomor Handphone :</h5>
                                                 <span class="d-block fs-12 text-muted mb-2">Call our team Mon-Fri 9:00am - 6:00pm</span>
                                                 <div class="fw-semibold">+1 (555) 123-4567</div>
                                             </div>
