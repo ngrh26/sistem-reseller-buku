@@ -12,10 +12,10 @@
                     <!-- Start::page-header -->
                     <div class="page-header-breadcrumb mb-3">
                         <div class="d-flex align-center justify-content-between flex-wrap">
-                            <h1 class="page-title fw-medium fs-18 mb-0">Profile Settings</h1>
+                            <h1 class="page-title fw-medium fs-18 mb-0">Pengaturan Profil</h1>
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Profile Settings</li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Halaman</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Pengaturan Profil</li>
                             </ol>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                             <div class="card custom-card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        Account
+                                        Akun
                                     </div>
                                 </div>
                                 <div class="card-body p-4">
@@ -40,41 +40,41 @@
                                                     </span>
                                                 </div>
                                                 <div>
-                                                    <span class="fw-medium d-block mb-2">Profile Picture</span>
+                                                    <span class="fw-medium d-block mb-2">Foto Profil</span>
                                                     <div class="btn-list mb-1">
-                                                        <button class="btn btn-sm btn-primary btn-wave"><i class="ri-upload-2-line me-1"></i>Change Image</button>
-                                                        <button class="btn btn-sm btn-light btn-wave"><i class="ri-delete-bin-line me-1"></i>Remove</button>
+                                                        <button class="btn btn-sm btn-primary btn-wave"><i class="ri-upload-2-line me-1"></i>Ubah Gambar</button>
+                                                        <button class="btn btn-sm btn-light btn-wave"><i class="ri-delete-bin-line me-1"></i>Hapus</button>
                                                     </div>
-                                                    <span class="d-block fs-12 text-muted">Use JPEG, PNG, or GIF. Best size: 200x200 pixels. Keep it under 5MB</span>
+                                                    <span class="d-block fs-12 text-muted">Gunakan format JPEG, PNG, atau GIF. Ukuran terbaik: 200x200 piksel. Pastikan ukuran file di bawah 5MB</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <label for="profile-user-name" class="form-label">User Name :</label>
-                                            <input type="text" class="form-control" id="profile-user-name" value="" placeholder="Enter Name">
+                                            <input type="text" class="form-control" id="profile-user-name" value="" placeholder="Masukkan Username">
                                         </div>
                                         <div class="col-xl-6">
                                             <label for="profile-email" class="form-label">Email :</label>
-                                            <input type="email" class="form-control" id="profile-email" value="" placeholder="Enter Email">
+                                            <input type="email" class="form-control" id="profile-email" value="" placeholder="Masukkan Email">
                                         </div>
                                         <div class="col-xl-6">
-                                            <label for="profile-phn-no" class="form-label">Phone No :</label>
-                                            <input type="text" class="form-control" id="profile-phn-no" value="" placeholder="Enter Number">
+                                            <label for="profile-phn-no" class="form-label">Nomor Telepon :</label>
+                                            <input type="text" class="form-control" id="profile-phn-no" value="" placeholder="Masukkan Nomor Telepon">
                                         </div>
                                         <div class="col-xl-3">
-                                            <label for="profile-age" class="form-label">Age :</label>
-                                            <input type="number" class="form-control" id="profile-age" value="" placeholder="Enter Age">
+                                            <label for="profile-age" class="form-label">Umur :</label>
+                                            <input type="number" class="form-control" id="profile-age" value="" placeholder="Masukkan Umur">
                                         </div>
                                         <div class="col-xl-3">
-                                            <label for="profile-designation" class="form-label">Designation :</label>
-                                            <input type="text" class="form-control" id="profile-designation" value="" placeholder="Enter Designation">
+                                            <label for="profile-designation" class="form-label">Jabatan :</label>
+                                            <input type="text" class="form-control" id="profile-designation" value="" placeholder="Masukkan Jabatan">
                                         </div>
                                         <div class="col-xl-12">
-                                            <label for="profile-address" class="form-label">Address :</label>
+                                            <label for="profile-address" class="form-label">Alamat :</label>
                                             <textarea class="form-control" id="profile-address" rows="3"></textarea>
                                         </div>
                                         <div class="col-xl-6">
-                                            <label for="profile-language" class="form-label">Language :</label>
+                                            <label for="profile-language" class="form-label">Bahasa :</label>
                                             <select class="form-control" data-trigger id="profile-language">
                                                 <option>Us English</option>
                                                 <option>Arabic</option> 
@@ -82,7 +82,7 @@
                                             </select>
                                         </div>
                                         <div class="col-xl-6">
-                                            <label for="profile-timezone" class="form-label">Timezone :</label>
+                                            <label for="profile-timezone" class="form-label">Zona Waktu :</label>
                                             <select class="form-control" data-trigger id="profile-timezone">
                                                 <option value="Pacific/Midway" data-select2-id="6"> (GMT-11:00) Midway Island, Samoa</option> 
                                                 <option value="America/Adak" data-select2-id="16"> (GMT-10:00) Hawaii-Aleutian</option> 
@@ -184,23 +184,23 @@
                             <div class="card custom-card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        Change Password
+                                        Ubah Kata Sandi
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="row gy-3">
                                         <div class="col-xl-6">
-                                            <label for="Password" class="form-label">New Password</label>
-                                            <input type="text" class="form-control" id="Password" value="" placeholder="Enter Password">
+                                            <label for="Password" class="form-label">Kata Sandi Baru</label>
+                                            <input type="text" class="form-control" id="Password" value="" placeholder="Masukkan Kata Sandi Baru">
                                         </div>
                                         <div class="col-xl-6">
-                                            <label for="confirm-password" class="form-label">Confirm Password</label>
-                                            <input type="text" class="form-control" id="confirm-password" value="" placeholder="Confirm Password">
+                                            <label for="confirm-password" class="form-label">Konfirmasi Kata Sandi Baru</label>
+                                            <input type="text" class="form-control" id="confirm-password" value="" placeholder="Konfirmasi Kata Sandi Baru">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-primary float-end">Save Changes</button>
+                                    <button class="btn btn-primary float-end">Simpan Perubahan</button>
                                 </div>
                             </div>
                         </div>
@@ -208,21 +208,21 @@
                             <div class="card custom-card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        Security Settings
+                                        Pengaturan Keamanan
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="d-sm-flex d-block align-items-top justify-content-between">
                                         <div class="w-50">
-                                            <p class="fs-14 mb-1 fw-medium">Login Verification</p>
-                                            <p class="fs-12 mb-0 text-muted">This helps protect accounts from unauthorized access, even if a password is compromised.</p>
+                                            <p class="fs-14 mb-1 fw-medium">Verifikasi Login</p>
+                                            <p class="fs-12 mb-0 text-muted">Ini membantu melindungi akun dari akses yang tidak sah, bahkan jika kata sandi Anda diketahui orang lain.</p>
                                         </div>
-                                        <a href="javascript:void(0);" class="link-primary text-decoration-underline">Set Up Verification</a>
+                                        <a href="javascript:void(0);" class="link-primary text-decoration-underline">Atur Verifikasi</a>
                                     </div>
                                     <div class="d-sm-flex d-block align-items-top justify-content-between mt-3">
                                         <div class="w-50">
-                                            <p class="fs-14 mb-1 fw-medium">Password Verification</p>
-                                            <p class="fs-12 mb-0 text-muted">This additional step helps ensure that the person attempting to modify account details is the legitimate account owner.</p>
+                                            <p class="fs-14 mb-1 fw-medium">Verifikasi Kata Sandi</p>
+                                            <p class="fs-12 mb-0 text-muted">Langkah tambahan ini membantu memastikan bahwa orang yang mencoba mengubah detail akun benar-benar pemilik akun yang sah.</p>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="personal-details">
@@ -234,8 +234,8 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="btn-list float-end">
-                                        <button class="btn btn-danger btn-wave">Deactivate Account</button>
-                                        <button class="btn btn-light btn-wave">Restore Defaults</button>
+                                        <button class="btn btn-danger btn-wave">Nonaktifkan Akun</button>
+                                        <button class="btn btn-light btn-wave">Kembalikan Default</button>
                                     </div>
                                 </div>
                             </div>
@@ -244,20 +244,20 @@
                             <div class="card custom-card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        Notifications
+                                        Pemberitahuan
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="row gx-5 gy-3">
                                         <div class="col-xl-12">
-                                            <p class="fs-14 mb-1 fw-medium">Configure Notifications</p>
-                                            <p class="fs-12 mb-0 text-muted">By configuring notifications, users can tailor their experience to receive alerts for the types of events that matter to them.</p>
+                                            <p class="fs-14 mb-1 fw-medium">Pengaturan Notifikasi</p>
+                                            <p class="fs-12 mb-0 text-muted">Dengan mengatur notifikasi, pengguna dapat menyesuaikan pengalaman mereka agar hanya menerima pemberitahuan untuk hal-hal yang penting bagi mereka.</p>
                                         </div>
                                         <div class="col-xl-12">
                                             <div class="d-flex align-items-top justify-content-between mt-sm-0 mt-3">
                                                 <div class="mail-notification-settings">
-                                                    <p class="fs-14 mb-1 fw-medium">In-App Notifications</p>
-                                                    <p class="fs-12 mb-0 text-muted">Alerts that appear within the application interface.</p>
+                                                    <p class="fs-14 mb-1 fw-medium">Pemberitahuan di Aplikasi</p>
+                                                    <p class="fs-12 mb-0 text-muted">Pemberitahuan yang muncul di antarmuka aplikasi.</p>
                                                 </div>
                                                 <div class="toggle toggle-success on mb-0 float-sm-end" id="in-app-notifications">
                                                     <span></span>
@@ -265,8 +265,8 @@
                                             </div>
                                             <div class="d-flex align-items-top justify-content-between mt-3">
                                                 <div class="mail-notification-settings">
-                                                    <p class="fs-14 mb-1 fw-medium">Email Notifications</p>
-                                                    <p class="fs-12 mb-0 text-muted">Messages sent to the user's email address.</p>
+                                                    <p class="fs-14 mb-1 fw-medium">Pemberitahuan via Email</p>
+                                                    <p class="fs-12 mb-0 text-muted">Pesan yang dikirim ke alamat email pengguna.</p>
                                                 </div>
                                                 <div class="toggle toggle-success on mb-0 float-sm-end" id="email-notifications">
                                                     <span></span>
@@ -274,8 +274,8 @@
                                             </div>
                                             <div class="d-flex align-items-top justify-content-between mt-3">
                                                 <div class="mail-notification-settings">
-                                                    <p class="fs-14 mb-1 fw-medium">Push Notifications</p>
-                                                    <p class="fs-12 mb-0 text-muted">Alerts sent to the user's mobile device or desktop.</p>
+                                                    <p class="fs-14 mb-1 fw-medium">Pemberitahuan via Push</p>
+                                                    <p class="fs-12 mb-0 text-muted">Pemberitahuan yang dikirim ke perangkat mobile atau desktop pengguna.</p>
                                                 </div>
                                                 <div class="toggle toggle-success mb-0 float-sm-end" id="push-notifications">
                                                     <span></span>
@@ -283,8 +283,8 @@
                                             </div>
                                             <div class="d-flex align-items-top justify-content-between mt-3">
                                                 <div class="mail-notification-settings">
-                                                    <p class="fs-14 mb-1 fw-medium">SMS Notifications</p>
-                                                    <p class="fs-12 mb-0 text-muted">Text messages sent to the user's mobile phone.</p>
+                                                    <p class="fs-14 mb-1 fw-medium">Pemberitahuan via SMS</p>
+                                                    <p class="fs-12 mb-0 text-muted">Pesan teks yang dikirim ke nomor telepon mobile pengguna.</p>
                                                 </div>
                                                 <div class="toggle toggle-success on mb-0 float-sm-end" id="sms-notifications">
                                                     <span></span>
