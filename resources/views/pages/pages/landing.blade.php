@@ -484,241 +484,106 @@
                 <!-- End:: Buy Now Section -->
 
                 <!-- Start:: Section-4 -->
-                <section class="section" id="price">
-                    <div class="container">
-                        <div class="heading-section">
-                            <div class="heading-subtitle">Pilihan Paket</div>
-                            <div class="heading-title">Pilih Paket Sesuai Kebutuhan Anda</div>
-                            <div class="heading-description mb-3">
-                                Temukan paket yang pas dan nikmati kemudahan penuh dalam menjalankan bisnis reseller buku Anda.
-                            </div>
-                            <div class="tab-style-1 border bg-white rounded-0 d-inline-block">
-                                <ul class="nav nav-pills" role="tablist"> 
-                                    <li class="nav-item" role="presentation"> 
-                                        <button type="button" class="nav-link rounded-0 fw-medium active" data-bs-toggle="pill" data-bs-target="#pricing1-monthly" aria-selected="true" role="tab">Monthly</button> 
-                                    </li> 
-                                    <li class="nav-item" role="presentation"> 
-                                        <button type="button" class="nav-link rounded-0 fw-medium" data-bs-toggle="pill" data-bs-target="#pricing1-yearly" aria-selected="false" role="tab" tabindex="-1">Yearly</button> 
-                                    </li> 
-                                </ul> 
-                            </div> 
-                        </div>
-                        <div class="tab-content">
-                            <div class="tab-pane show active p-0 border-0" id="pricing1-monthly" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-4">
-                                        <div class="card custom-card">
-                                            <div class="card-body p-4 text-center">
-                                                <h5 class="fw-semibold mb-3">Starter</h5>
-                                                <div class="d-flex align-items-end justify-content-center gap-1 mb-4">
-                                                    <h2 class="fw-semibold mb-0 lh-1 text-primary">Benefit</h2>
-                                                    <span class="fs-13 text-muted">/ paket</span>
-                                                </div>
-                                                <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
-                                                    <li>
-                                                        Minimal Order 5 buku
-                                                    </li>
-                                                    <li>
-                                                        Modal Ringan
-                                                    </li>
-                                                    <li>
-                                                        Repeat Order Cepat
-                                                    </li>
-                                                    <li>
-                                                        Toolkit Promosi Lengkap
-                                                    </li>
-                                                    <li>
-                                                        Cocok untuk Guru, Bimbel
-                                                    </li>
-                                                </ul>
-                                                <div>
-                                                    <span class="badge bg-secondary-transparent py-1 px-3 fs-13 rounded-pill fw-normal">25% Off</span>
-                                                    <div class="d-grid mt-3">
-                                                        <button class="btn btn-primary btn-lg">Gabung Sekarang</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4">
-                                        <div class="card custom-card card-bg-primary">
-                                            <div class="card-body p-4 text-center">
-                                                <h5 class="fw-semibold mb-3 text-fixed-white">Profesional</h5>
-                                                <div class="d-flex align-items-end justify-content-center gap-1 mb-4">
-                                                    <h2 class="fw-semibold mb-0 lh-1 text-fixed-white">Benefit</h2>
-                                                    <span class="fs-13">/ Paket</span>
-                                                </div>
-                                                <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
-                                                    <li>
-                                                        Minimal Order 20 Buku
-                                                    </li>
-                                                    <li>
-                                                        Modal Ringan
-                                                    </li>
-                                                    <li>
-                                                        Repeat Order Cepat
-                                                    </li>
-                                                    <li>
-                                                        Toolkit Promosi Lengkap
-                                                    </li>
-                                                    <li>
-                                                        Cocok untuk Komunitas, Toko
-                                                    </li>
-                                                </ul>
-                                                <div>
-                                                    <span class="badge bg-white-transparent py-1 px-3 fs-13 rounded-pill fw-normal">40% Off</span>
-                                                    <div class="d-grid mt-3">
-                                                        <button class="btn btn-light btn-lg">Gabung Sekarang</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4">
-                                        <div class="card custom-card">
-                                            <div class="card-body p-4 text-center">
-                                                <h5 class="fw-semibold mb-3">Distributor</h5>
-                                                <div class="d-flex align-items-end justify-content-center gap-1 mb-4">
-                                                    <h2 class="fw-semibold mb-0 lh-1 text-primary">Benefit</h2>
-                                                    <span class="fs-13 text-muted">/ Paket</span>
-                                                </div>
-                                                <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
-                                                    <li>
-                                                        Minimal Order 40 Buku
-                                                    </li>
-                                                    <li>
-                                                        Margin Tebal
-                                                    </li>
-                                                    <li>
-                                                        Prioritas Restock
-                                                    </li>
-                                                    <li>
-                                                        Toolkit Promosi Lengkap
-                                                    </li>
-                                                    <li>
-                                                        Co-Branding Materi Promosi
-                                                    </li>
-                                                </ul>
-                                                <div>
-                                                    <span class="badge bg-secondary-transparent py-1 px-3 fs-13 rounded-pill fw-normal">50% Off</span>
-                                                    <div class="d-grid mt-3">
-                                                        <button class="btn btn-primary btn-lg">Gabung Sekarang</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane p-0 border-0" id="pricing1-yearly" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-4">
-                                        <div class="card custom-card">
-                                            <div class="card-body p-4 text-center">
-                                                <h5 class="fw-semibold mb-3">Basic</h5>
-                                                <div class="d-flex align-items-end justify-content-center gap-1 mb-4">
-                                                    <h2 class="fw-semibold mb-0 lh-1 text-primary">$150</h2>
-                                                    <span class="fs-13 text-muted">/ Year</span>
-                                                </div>
-                                                <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
-                                                    <li>
-                                                        Access to core features
-                                                    </li>
-                                                    <li>
-                                                        5GB storage
-                                                    </li>
-                                                    <li>
-                                                        Basic customer support
-                                                    </li>
-                                                    <li>
-                                                        1 user access
-                                                    </li>
-                                                    <li>
-                                                        Email notifications
-                                                    </li>
-                                                </ul>
-                                                <div>
-                                                    <span class="badge bg-secondary-transparent py-1 px-3 fs-13 rounded-pill fw-normal">25% Off</span>
-                                                    <div class="d-grid mt-3">
-                                                        <button class="btn btn-primary btn-lg">Choose Plan</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4">
-                                        <div class="card custom-card card-bg-primary">
-                                            <div class="card-body p-4 text-center">
-                                                <h5 class="fw-semibold mb-3 text-fixed-white">Pro</h5>
-                                                <div class="d-flex align-items-end justify-content-center gap-1 mb-4">
-                                                    <h2 class="fw-semibold mb-0 lh-1 text-fixed-white">$450</h2>
-                                                    <span class="fs-13">/ Year</span>
-                                                </div>
-                                                <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
-                                                    <li>
-                                                        All Basic Plan Features
-                                                    </li>
-                                                    <li>
-                                                        50GB storage
-                                                    </li>
-                                                    <li>
-                                                        Priority customer support
-                                                    </li>
-                                                    <li>
-                                                        5 user access
-                                                    </li>
-                                                    <li>
-                                                        Advanced analytics
-                                                    </li>
-                                                </ul>
-                                                <div>
-                                                    <span class="badge bg-white-transparent py-1 px-3 fs-13 rounded-pill fw-normal">40% Off</span>
-                                                    <div class="d-grid mt-3">
-                                                        <button class="btn btn-light btn-lg">Choose Plan</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4">
-                                        <div class="card custom-card">
-                                            <div class="card-body p-4 text-center">
-                                                <h5 class="fw-semibold mb-3">Enterprise</h5>
-                                                <div class="d-flex align-items-end justify-content-center gap-1 mb-4">
-                                                    <h2 class="fw-semibold mb-0 lh-1 text-primary">$990</h2>
-                                                    <span class="fs-13 text-muted">/ Year</span>
-                                                </div>
-                                                <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
-                                                    <li>
-                                                        All Pro Plan Features
-                                                    </li>
-                                                    <li>
-                                                        Unlimited storage
-                                                    </li>
-                                                    <li>
-                                                        Dedicated account manager
-                                                    </li>
-                                                    <li>
-                                                        20 user access
-                                                    </li>
-                                                    <li>
-                                                        Customizable workflows
-                                                    </li>
-                                                </ul>
-                                                <div>
-                                                    <span class="badge bg-secondary-transparent py-1 px-3 fs-13 rounded-pill fw-normal">50% Off</span>
-                                                    <div class="d-grid mt-3">
-                                                        <button class="btn btn-primary btn-lg">Choose Plan</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+              <section class="section" id="price">
+            <div class="container">
+            <div class="heading-section text-center">
+                <div class="heading-subtitle">Pilihan Paket</div>
+                <div class="heading-title">Paket Reseller Buku</div>
+                 <div class="heading-description mb-5">
+                Pilih paket reseller sesuai kebutuhan dan skala bisnis Anda.
+                </div>
+            </div>
+
+            <div class="row">
+            <!-- Starter -->
+                <div class="col-xl-4">
+                     <div class="card custom-card">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-semibold mb-3">Starter</h5>
+
+                            <h2 class="fw-semibold mb-4 text-primary">Benefit Paket</h2>
+
+                            <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
+                                <li>Minimal Order 5 Buku</li>
+                                <li>Modal Ringan</li>
+                                <li>Repeat Order Cepat</li>
+                                <li>Toolkit Promosi Lengkap</li>
+                                <li>Cocok untuk Guru & Bimbel</li>
+                            </ul>
+
+                            <span class="badge bg-secondary-transparent py-1 px-3 fs-13 rounded-pill">
+                            Diskon 15%
+                            </span>
+
+                            <div class="d-grid mt-3">
+                                <button class="btn btn-primary btn-lg">
+                                Gabung Sekarang
+                                </button>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+
+            <!-- Profesional -->
+                <div class="col-xl-4">
+                    <div class="card custom-card card-bg-primary">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-semibold mb-3 text-fixed-white">Profesional</h5>
+
+                            <h2 class="fw-semibold mb-4 text-fixed-white">Benefit Paket</h2>
+
+                            <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4 text-fixed-white">
+                                <li>Minimal Order 20 Buku</li>
+                                <li>Modal Ringan</li>
+                                <li>Repeat Order Cepat</li>
+                                <li>Toolkit Promosi Lengkap</li>
+                                <li>Cocok untuk Komunitas & Toko</li>
+                            </ul>
+
+                            <span class="badge bg-white-transparent py-1 px-3 fs-13 rounded-pill">
+                            Diskon 20%
+                            </span>
+
+                            <div class="d-grid mt-3">
+                                <button class="btn btn-light btn-lg">
+                                Gabung Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Distributor -->
+                <div class="col-xl-4">
+                    <div class="card custom-card">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-semibold mb-3">Distributor</h5>
+
+                            <h2 class="fw-semibold mb-4 text-primary">Benefit Paket</h2>
+
+                            <ul class="list-unstyled pricing-features-list-1 mx-5 text-start mb-4">
+                                <li>Minimal Order 40 Buku</li>
+                                <li>Margin Tebal</li>
+                                <li>Prioritas Restock</li>
+                                <li>Toolkit Promosi Lengkap</li>
+                                <li>Co-Branding Materi Promosi</li>
+                            </ul>
+
+                            <span class="badge bg-secondary-transparent py-1 px-3 fs-13 rounded-pill">
+                            Diskon 35%
+                            </span>
+
+                            <div class="d-grid mt-3">
+                                <button class="btn btn-primary btn-lg">
+                                Gabung Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
                 <!-- End:: Section-4 -->
 
                 <!-- Start:: Section-5 -->
@@ -813,7 +678,7 @@
                 </section>
                 <!-- End:: Section-5 -->
 
-                <!-- Start:: Section-6 -->
+                <!-- Testimoni -->
                 <section class="section section-primary testimonials-section">
                     <div class="testimonials-background-container">
                         <img src="{{asset('build/assets/images/media/backgrounds/2.png')}}" alt="">
@@ -1217,12 +1082,12 @@
                     </div>
                     <div class="container">
                         <div class="d-flex align-items-center gap-2 justify-content-between">
-                            <div>
+                        <!--    <div>
                                 <h4 class="fw-semibold text-fixed-white">Build and Manage with Ease</h4>
                                 <span class="d-block fs-16 op-8">Create, manage, and optimize effortlessly with our admin template.</span>
                             </div>
                             <button class="btn btn-secondary btn-lg btn-w-md d-inline-flex align-items-center">Buy Now<i class="ti ti-shopping-cart ms-2"></i></button>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
                 <!-- End:: Buy Now Section -->
