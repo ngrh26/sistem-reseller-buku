@@ -7,9 +7,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    {{-- Bootstrap Icons untuk icon mata password --}}
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet"
+    >
 
     <style>
         :root {
@@ -29,8 +42,16 @@
             min-height: 100vh;
             font-family: 'Inter', sans-serif;
             background:
-                radial-gradient(circle at top left, rgba(46, 91, 156, .15), transparent 35%),
-                linear-gradient(135deg, #f5f7fb 0%, #eef2f8 100%);
+                radial-gradient(
+                    circle at top left,
+                    rgba(46, 91, 156, .15),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #f5f7fb 0%,
+                    #eef2f8 100%
+                );
             color: var(--text);
         }
 
@@ -55,7 +76,11 @@
 
         .auth-brand {
             width: 45%;
-            background: linear-gradient(145deg, var(--primary), var(--primary-light));
+            background: linear-gradient(
+                145deg,
+                var(--primary),
+                var(--primary-light)
+            );
             color: white;
             padding: 55px;
             display: flex;
@@ -184,6 +209,63 @@
             box-shadow: 0 0 0 3px rgba(46,91,156,.1);
         }
 
+        /* =========================================================
+           PASSWORD SHOW / HIDE
+        ========================================================== */
+
+        .password-wrapper {
+            position: relative;
+        }
+
+        .password-wrapper .form-control {
+            padding-right: 48px;
+        }
+
+        .password-toggle {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            transform: translateY(-50%);
+
+            width: 30px;
+            height: 30px;
+
+            padding: 0;
+
+            border: none;
+            background: transparent;
+
+            color: #8a94a3;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+
+            border-radius: 7px;
+
+            transition:
+                color .2s ease,
+                background .2s ease;
+        }
+
+        .password-toggle:hover {
+            color: var(--primary-light);
+            background: rgba(46,91,156,.07);
+        }
+
+        .password-toggle:focus {
+            outline: none;
+            color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(46,91,156,.10);
+        }
+
+        .password-toggle i {
+            font-size: 16px;
+            line-height: 1;
+        }
+
         .btn-login {
             width: 100%;
             height: 50px;
@@ -221,6 +303,7 @@
         }
 
         @media (max-width: 768px) {
+
             .auth-card {
                 flex-direction: column;
                 min-height: auto;
@@ -249,11 +332,20 @@
 <body>
 
 <div class="auth-wrapper">
+
     <div class="auth-card">
 
+        {{-- =====================================================
+             LEFT BRAND
+        ====================================================== --}}
+
         <div class="auth-brand">
+
             <div class="brand-content">
-                <div class="brand-logo">CM</div>
+
+                <div class="brand-logo">
+                    CM
+                </div>
 
                 <div class="brand-title">
                     Cyber Media<br>
@@ -266,53 +358,117 @@
                 </p>
 
                 <div class="brand-feature">
-                    <div class="feature-icon">✓</div>
-                    <span>Harga khusus reseller</span>
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <span>
+                        Harga khusus reseller
+                    </span>
+
                 </div>
 
                 <div class="brand-feature">
-                    <div class="feature-icon">✓</div>
-                    <span>Pilihan paket reseller fleksibel</span>
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <span>
+                        Pilihan paket reseller fleksibel
+                    </span>
+
                 </div>
 
                 <div class="brand-feature">
-                    <div class="feature-icon">✓</div>
-                    <span>Pengelolaan pesanan terintegrasi</span>
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <span>
+                        Pengelolaan pesanan terintegrasi
+                    </span>
+
                 </div>
+
             </div>
+
         </div>
 
+
+        {{-- =====================================================
+             RIGHT FORM
+        ====================================================== --}}
+
         <div class="auth-form">
+
             <div class="form-container">
 
-                <div class="form-title">Selamat Datang</div>
+                <div class="form-title">
+                    Selamat Datang
+                </div>
 
                 <p class="form-subtitle">
                     Silakan masuk ke akun Anda untuk melanjutkan.
                 </p>
 
+
+                {{-- STATUS --}}
+
                 @if (session('status'))
+
                     <div class="alert alert-success mb-4">
                         {{ session('status') }}
                     </div>
+
                 @endif
+
+
+                {{-- ERROR --}}
 
                 @if ($errors->any())
+
                     <div class="alert alert-danger mb-4">
-                        <strong>Login gagal.</strong>
+
+                        <strong>
+                            Login gagal.
+                        </strong>
+
                         <ul class="mb-0 mt-2">
+
                             @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
+
+                                <li>
+                                    {{ $error }}
+                                </li>
+
                             @endforeach
+
                         </ul>
+
                     </div>
+
                 @endif
 
-                <form method="POST" action="{{ route('login') }}">
+
+                <form
+                    method="POST"
+                    action="{{ route('login') }}"
+                >
+
                     @csrf
 
+
+                    {{-- EMAIL --}}
+
                     <div class="mb-3">
-                        <label for="email" class="form-label">
+
+                        <label
+                            for="email"
+                            class="form-label"
+                        >
                             Email
                         </label>
 
@@ -327,60 +483,212 @@
                             required
                             autofocus
                         >
+
                     </div>
 
+
+                    {{-- PASSWORD --}}
+
                     <div class="mb-3">
-                        <label for="password" class="form-label">
+
+                        <label
+                            for="password"
+                            class="form-label"
+                        >
                             Password
                         </label>
 
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            class="form-control @error('password') is-invalid @enderror"
-                            placeholder="Masukkan password"
-                            autocomplete="current-password"
-                            required
-                        >
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="form-control @error('password') is-invalid @enderror"
+                                placeholder="Masukkan password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="togglePassword"
+                                aria-label="Tampilkan password"
+                                title="Tampilkan password"
+                            >
+
+                                <i class="bi bi-eye"></i>
+
+                            </button>
+
+                        </div>
+
                     </div>
 
+
+                    {{-- REMEMBER --}}
+
                     <div class="d-flex justify-content-between align-items-center mb-4">
+
                         <label class="remember d-flex align-items-center gap-2">
+
                             <input
                                 type="checkbox"
                                 name="remember"
                                 value="1"
                             >
+
                             Ingat saya
+
                         </label>
+
                     </div>
 
-                    <button type="submit" class="btn-login">
+
+                    {{-- LOGIN BUTTON --}}
+
+                    <button
+                        type="submit"
+                        class="btn-login"
+                    >
                         Masuk
                     </button>
+
                 </form>
 
+
+                {{-- REGISTER LINK --}}
+
                 <div class="text-center mt-4">
+
                     <span class="text-muted small">
                         Belum memiliki akun?
                     </span>
-                    <a href="{{ route('register') }}" class="auth-link small">
+
+                    <a
+                        href="{{ route('register') }}"
+                        class="auth-link small"
+                    >
                         Daftar sebagai Reseller
                     </a>
+
                 </div>
 
+
+                {{-- LANDING LINK --}}
+
                 <div class="text-center mt-3">
-                    <a href="{{ route('landing') }}" class="text-muted small text-decoration-none">
+
+                    <a
+                        href="{{ route('landing') }}"
+                        class="text-muted small text-decoration-none"
+                    >
                         ← Kembali ke halaman utama
                     </a>
+
                 </div>
 
             </div>
+
         </div>
 
     </div>
+
 </div>
+
+
+{{-- =========================================================
+     SHOW / HIDE PASSWORD
+========================================================== --}}
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const passwordInput =
+            document.getElementById('password');
+
+        const togglePassword =
+            document.getElementById('togglePassword');
+
+
+        if (
+            !passwordInput ||
+            !togglePassword
+        ) {
+            return;
+        }
+
+
+        togglePassword.addEventListener(
+            'click',
+            function () {
+
+                const isPassword =
+                    passwordInput.type === 'password';
+
+
+                passwordInput.type =
+                    isPassword
+                        ? 'text'
+                        : 'password';
+
+
+                const icon =
+                    togglePassword.querySelector('i');
+
+
+                if (isPassword) {
+
+                    icon.classList.remove(
+                        'bi-eye'
+                    );
+
+                    icon.classList.add(
+                        'bi-eye-slash'
+                    );
+
+
+                    togglePassword.setAttribute(
+                        'aria-label',
+                        'Sembunyikan password'
+                    );
+
+                    togglePassword.setAttribute(
+                        'title',
+                        'Sembunyikan password'
+                    );
+
+                } else {
+
+                    icon.classList.remove(
+                        'bi-eye-slash'
+                    );
+
+                    icon.classList.add(
+                        'bi-eye'
+                    );
+
+
+                    togglePassword.setAttribute(
+                        'aria-label',
+                        'Tampilkan password'
+                    );
+
+                    togglePassword.setAttribute(
+                        'title',
+                        'Tampilkan password'
+                    );
+
+                }
+
+            }
+        );
+
+    });
+
+</script>
 
 </body>
 </html>

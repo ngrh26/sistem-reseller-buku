@@ -257,9 +257,14 @@
     /* =========================
        SUMMARY
     ========================== */
+
+    /*
+     * Tidak menggunakan position: sticky
+     * agar Ringkasan Pembayaran tidak bertabrakan
+     * dengan card Status Proses ketika halaman di-scroll.
+     */
     .order-detail-page .summary-card {
-        position: sticky;
-        top: 20px;
+        position: static;
     }
 
     .order-detail-page .summary-row {
@@ -379,6 +384,101 @@
 
     .order-detail-page .payment-info-row strong {
         color: #364152;
+    }
+
+    /* =========================
+       BANK TRANSFER
+    ========================== */
+    .order-detail-page .bank-transfer-box {
+        margin-top: 14px;
+        padding-top: 13px;
+        border-top: 1px solid #e5eaf1;
+    }
+
+    .order-detail-page .bank-transfer-title {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        color: #1A2B5C;
+        font-size: .78rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .order-detail-page .bank-option {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 11px;
+        background: #fff;
+        border: 1px solid #e4e9f1;
+        border-radius: 10px;
+        margin-bottom: 8px;
+    }
+
+    .order-detail-page .bank-option:last-child {
+        margin-bottom: 0;
+    }
+
+    .order-detail-page .bank-name {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+    }
+
+    .order-detail-page .bank-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background: #edf3fb;
+        color: #2E5B9C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .78rem;
+        flex-shrink: 0;
+    }
+
+    .order-detail-page .bank-name strong {
+        display: block;
+        color: #364152;
+        font-size: .75rem;
+        line-height: 1.3;
+    }
+
+    .order-detail-page .bank-name small {
+        display: block;
+        color: #8a94a3;
+        font-size: .65rem;
+        margin-top: 2px;
+    }
+
+    .order-detail-page .bank-number {
+        text-align: right;
+        flex-shrink: 0;
+    }
+
+    .order-detail-page .bank-number strong {
+        display: block;
+        color: #1A2B5C;
+        font-size: .76rem;
+        letter-spacing: .02em;
+    }
+
+    .order-detail-page .bank-number small {
+        display: block;
+        color: #8a94a3;
+        font-size: .63rem;
+        margin-top: 2px;
+    }
+
+    .order-detail-page .bank-note {
+        margin-top: 9px;
+        color: #7c8796;
+        font-size: .65rem;
+        line-height: 1.5;
     }
 
     .order-detail-page .alert-info-custom {
@@ -532,12 +632,6 @@
     /* =========================
        RESPONSIVE
     ========================== */
-    @media (max-width: 991.98px) {
-        .order-detail-page .summary-card {
-            position: static;
-        }
-    }
-
     @media (max-width: 767.98px) {
 
         .order-detail-page .page-header-custom {
@@ -584,6 +678,7 @@
     }
 
     @media (max-width: 575.98px) {
+
         .order-detail-page .product-item {
             flex-wrap: wrap;
         }
@@ -598,11 +693,22 @@
         .order-detail-page .summary-total strong {
             font-size: 1rem;
         }
+
+        .order-detail-page .bank-option {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .order-detail-page .bank-number {
+            text-align: left;
+            padding-left: 38px;
+        }
     }
 </style>
 @endpush
 
 @section('content')
+
 <div class="container-fluid order-detail-page">
 
     {{-- Header --}}
@@ -637,7 +743,10 @@
     {{-- Flash Message --}}
     @if(session('success'))
 
-        <div class="alert-custom alert-success-custom" role="alert">
+        <div
+            class="alert-custom alert-success-custom"
+            role="alert"
+        >
 
             <i class="bi bi-check-circle-fill me-2"></i>
 
@@ -650,7 +759,10 @@
     {{-- Error --}}
     @if($errors->any())
 
-        <div class="alert-custom alert-danger-custom" role="alert">
+        <div
+            class="alert-custom alert-danger-custom"
+            role="alert"
+        >
 
             <i class="bi bi-exclamation-triangle-fill me-2"></i>
 
@@ -661,43 +773,90 @@
     @endif
 
     @php
+
         $statusClass = match ($order->status) {
-            'pending' => 'status-pending',
-            'processed' => 'status-processed',
-            'shipped' => 'status-shipped',
-            'completed' => 'status-completed',
-            'cancelled' => 'status-cancelled',
-            default => 'status-pending',
+
+            'pending' =>
+                'status-pending',
+
+            'processed' =>
+                'status-processed',
+
+            'shipped' =>
+                'status-shipped',
+
+            'completed' =>
+                'status-completed',
+
+            'cancelled' =>
+                'status-cancelled',
+
+            default =>
+                'status-pending',
+
         };
 
         $statusLabel = match ($order->status) {
-            'pending' => 'Menunggu',
-            'processed' => 'Diproses',
-            'shipped' => 'Dikirim',
-            'completed' => 'Selesai',
-            'cancelled' => 'Dibatalkan',
-            default => ucfirst($order->status),
+
+            'pending' =>
+                'Menunggu',
+
+            'processed' =>
+                'Diproses',
+
+            'shipped' =>
+                'Dikirim',
+
+            'completed' =>
+                'Selesai',
+
+            'cancelled' =>
+                'Dibatalkan',
+
+            default =>
+                ucfirst($order->status),
+
         };
 
         $paymentClass = match ($order->payment_status) {
-            'paid' => 'payment-paid',
-            'failed' => 'payment-failed',
-            default => 'payment-pending',
+
+            'paid' =>
+                'payment-paid',
+
+            'failed' =>
+                'payment-failed',
+
+            default =>
+                'payment-pending',
+
         };
 
         $paymentLabel = match ($order->payment_status) {
-            'pending' => 'Belum Dibayar',
-            'paid' => 'Sudah Dibayar',
-            'failed' => 'Pembayaran Gagal',
-            default => ucfirst($order->payment_status),
+
+            'pending' =>
+                'Belum Dibayar',
+
+            'paid' =>
+                'Sudah Dibayar',
+
+            'failed' =>
+                'Pembayaran Gagal',
+
+            default =>
+                ucfirst($order->payment_status),
+
         };
 
-        $totalItems = $order->items->sum('quantity');
+        $totalItems =
+            $order->items->sum('quantity');
+
     @endphp
 
     <div class="row g-4">
 
-        {{-- LEFT --}}
+        {{-- =====================================================
+             LEFT
+        ====================================================== --}}
         <div class="col-lg-8">
 
             {{-- Order Information --}}
@@ -706,20 +865,33 @@
                 <div class="card-header-custom">
 
                     <h5>
+
                         <i class="bi bi-info-circle me-2"></i>
+
                         Informasi Pesanan
+
                     </h5>
 
                     <div class="status-group">
 
-                        <span class="status-badge {{ $statusClass }}">
+                        <span
+                            class="status-badge {{ $statusClass }}"
+                        >
+
                             <i class="bi bi-box-seam"></i>
+
                             {{ $statusLabel }}
+
                         </span>
 
-                        <span class="status-badge {{ $paymentClass }}">
+                        <span
+                            class="status-badge {{ $paymentClass }}"
+                        >
+
                             <i class="bi bi-credit-card"></i>
+
                             {{ $paymentLabel }}
+
                         </span>
 
                     </div>
@@ -790,8 +962,11 @@
                 <div class="card-header-custom">
 
                     <h5>
+
                         <i class="bi bi-book me-2"></i>
+
                         Produk Pesanan
+
                     </h5>
 
                     <span
@@ -826,19 +1001,29 @@
                                 <div class="product-info">
 
                                     <div class="product-title">
+
                                         {{ $item->product?->title ?? 'Produk tidak tersedia' }}
+
                                     </div>
 
                                     <div class="product-meta">
+
                                         {{ $item->quantity }} buku
+
                                         ×
-                                        Rp {{ number_format($item->price_per_unit, 0, ',', '.') }}
+
+                                        Rp
+                                        {{ number_format($item->price_per_unit, 0, ',', '.') }}
+
                                     </div>
 
                                     @if($item->product?->author)
 
                                         <div class="product-meta">
-                                            Penulis: {{ $item->product->author }}
+
+                                            Penulis:
+                                            {{ $item->product->author }}
+
                                         </div>
 
                                     @endif
@@ -848,7 +1033,10 @@
                                 <div class="product-total">
 
                                     <strong>
-                                        Rp {{ number_format($item->total_price, 0, ',', '.') }}
+
+                                        Rp
+                                        {{ number_format($item->total_price, 0, ',', '.') }}
+
                                     </strong>
 
                                     <small>
@@ -873,8 +1061,11 @@
                 <div class="card-header-custom">
 
                     <h5>
+
                         <i class="bi bi-geo-alt me-2"></i>
+
                         Alamat Pengiriman
+
                     </h5>
 
                 </div>
@@ -882,7 +1073,9 @@
                 <div class="card-body-custom">
 
                     <div class="shipping-box">
+
                         {{ $order->shipping_address }}
+
                     </div>
 
                 </div>
@@ -891,7 +1084,9 @@
 
         </div>
 
-        {{-- RIGHT --}}
+        {{-- =====================================================
+             RIGHT
+        ====================================================== --}}
         <div class="col-lg-4">
 
             {{-- Summary --}}
@@ -900,8 +1095,11 @@
                 <div class="card-header-custom">
 
                     <h5>
+
                         <i class="bi bi-receipt me-2"></i>
+
                         Ringkasan Pembayaran
+
                     </h5>
 
                 </div>
@@ -927,7 +1125,10 @@
                         </span>
 
                         <strong>
-                            Rp {{ number_format($order->total_price, 0, ',', '.') }}
+
+                            Rp
+                            {{ number_format($order->total_price, 0, ',', '.') }}
+
                         </strong>
 
                     </div>
@@ -939,7 +1140,10 @@
                         </span>
 
                         <strong>
-                            - Rp {{ number_format($order->discount_amount, 0, ',', '.') }}
+
+                            - Rp
+                            {{ number_format($order->discount_amount, 0, ',', '.') }}
+
                         </strong>
 
                     </div>
@@ -951,7 +1155,10 @@
                         </span>
 
                         <strong>
-                            Rp {{ number_format($order->final_price, 0, ',', '.') }}
+
+                            Rp
+                            {{ number_format($order->final_price, 0, ',', '.') }}
+
                         </strong>
 
                     </div>
@@ -966,8 +1173,11 @@
                 <div class="card-header-custom">
 
                     <h5>
+
                         <i class="bi bi-credit-card-2-front me-2"></i>
+
                         Pembayaran
+
                     </h5>
 
                 </div>
@@ -979,17 +1189,23 @@
                         <div class="payment-status">
 
                             <div class="payment-icon">
+
                                 <i class="bi bi-wallet2"></i>
+
                             </div>
 
                             <div>
 
                                 <div class="payment-title">
+
                                     {{ $paymentLabel }}
+
                                 </div>
 
                                 <div class="payment-subtitle">
+
                                     Status pembayaran pesanan
+
                                 </div>
 
                             </div>
@@ -1007,7 +1223,10 @@
                                     </span>
 
                                     <strong>
-                                        Rp {{ number_format($order->payment->amount, 0, ',', '.') }}
+
+                                        Rp
+                                        {{ number_format($order->payment->amount, 0, ',', '.') }}
+
                                     </strong>
 
                                 </div>
@@ -1019,7 +1238,9 @@
                                     </span>
 
                                     <strong>
+
                                         {{ ucfirst($order->payment->status) }}
+
                                     </strong>
 
                                 </div>
@@ -1033,7 +1254,9 @@
                                         </span>
 
                                         <strong>
+
                                             {{ $order->payment->verified_at->format('d F Y, H:i') }}
+
                                         </strong>
 
                                     </div>
@@ -1054,6 +1277,120 @@
 
                         @endif
 
+                        {{-- Rekening Transfer --}}
+                        @if(
+                            $order->payment_status !== 'paid' &&
+                            $order->status !== 'cancelled'
+                        )
+
+                            <div class="bank-transfer-box">
+
+                                <div class="bank-transfer-title">
+
+                                    <i class="bi bi-bank"></i>
+
+                                    Rekening Tujuan Transfer
+
+                                </div>
+
+                                {{-- BRI --}}
+                                <div class="bank-option">
+
+                                    <div class="bank-name">
+
+                                        <div class="bank-icon">
+
+                                            <i class="bi bi-building"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Bank BRI
+                                            </strong>
+
+                                            <small>
+                                                PT Cyber Media Teknologi
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="bank-number">
+
+                                        {{-- Nomor rekening dummy --}}
+                                        <strong>
+                                            123456789012345
+                                        </strong>
+
+                                        <small>
+                                            Rekening BRI
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                                {{-- BCA --}}
+                                <div class="bank-option">
+
+                                    <div class="bank-name">
+
+                                        <div class="bank-icon">
+
+                                            <i class="bi bi-building"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Bank BCA
+                                            </strong>
+
+                                            <small>
+                                                PT Cyber Media Teknologi
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="bank-number">
+
+                                        {{-- Nomor rekening dummy --}}
+                                        <strong>
+                                            9876543210
+                                        </strong>
+
+                                        <small>
+                                            Rekening BCA
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="bank-note">
+
+                                    <i class="bi bi-info-circle me-1"></i>
+
+                                    Silakan transfer sesuai nominal
+
+                                    <strong>
+                                        Rp {{ number_format($order->final_price, 0, ',', '.') }}
+                                    </strong>
+
+                                    kemudian upload bukti pembayaran.
+
+                                </div>
+
+                            </div>
+
+                        @endif
+
                     </div>
 
                 </div>
@@ -1061,18 +1398,26 @@
             </div>
 
             {{-- Actions --}}
-            @if($order->status === 'pending' && $order->payment_status !== 'paid')
+            @if(
+                $order->status === 'pending' &&
+                $order->payment_status !== 'paid'
+            )
 
                 <div class="action-card">
 
                     <h6>
+
                         <i class="bi bi-lightning-charge me-1"></i>
+
                         Tindakan Pesanan
+
                     </h6>
 
                     <p>
+
                         Selesaikan pembayaran atau batalkan pesanan
                         apabila Anda tidak ingin melanjutkannya.
+
                     </p>
 
                     <div class="d-grid gap-2">
@@ -1081,8 +1426,11 @@
                             href="{{ route('reseller.payment.create', $order) }}"
                             class="btn btn-payment btn-action"
                         >
+
                             <i class="bi bi-upload me-1"></i>
+
                             Upload Bukti Pembayaran
+
                         </a>
 
                         <form
@@ -1090,14 +1438,18 @@
                             method="POST"
                             class="cancel-order-form"
                         >
+
                             @csrf
 
                             <button
                                 type="submit"
                                 class="btn btn-cancel btn-action w-100"
                             >
+
                                 <i class="bi bi-x-circle me-1"></i>
+
                                 Batalkan Pesanan
+
                             </button>
 
                         </form>
@@ -1111,14 +1463,21 @@
                 <div class="action-card">
 
                     <h6>
-                        <i class="bi bi-check-circle-fill me-1"
-                           style="color:#18794e;"></i>
+
+                        <i
+                            class="bi bi-check-circle-fill me-1"
+                            style="color:#18794e;"
+                        ></i>
+
                         Pembayaran Berhasil
+
                     </h6>
 
                     <p class="mb-0">
+
                         Pembayaran untuk pesanan ini telah diverifikasi
                         oleh admin.
+
                     </p>
 
                 </div>
@@ -1128,14 +1487,21 @@
                 <div class="action-card">
 
                     <h6>
-                        <i class="bi bi-x-circle-fill me-1"
-                           style="color:#b42318;"></i>
+
+                        <i
+                            class="bi bi-x-circle-fill me-1"
+                            style="color:#b42318;"
+                        ></i>
+
                         Pesanan Dibatalkan
+
                     </h6>
 
                     <p class="mb-0">
+
                         Pesanan ini sudah dibatalkan dan tidak dapat
                         diproses kembali.
+
                     </p>
 
                 </div>
@@ -1148,8 +1514,11 @@
                 <div class="card-header-custom">
 
                     <h5>
+
                         <i class="bi bi-clock-history me-2"></i>
+
                         Status Proses
+
                     </h5>
 
                 </div>
@@ -1157,33 +1526,70 @@
                 <div class="card-body-custom">
 
                     @php
+
                         $statuses = [
+
                             'pending' => [
-                                'title' => 'Menunggu',
-                                'desc' => 'Pesanan berhasil dibuat.',
+
+                                'title' =>
+                                    'Menunggu',
+
+                                'desc' =>
+                                    'Pesanan berhasil dibuat.',
+
                             ],
+
                             'processed' => [
-                                'title' => 'Diproses',
-                                'desc' => 'Pesanan sedang diproses.',
+
+                                'title' =>
+                                    'Diproses',
+
+                                'desc' =>
+                                    'Pesanan sedang diproses.',
+
                             ],
+
                             'shipped' => [
-                                'title' => 'Dikirim',
-                                'desc' => 'Pesanan telah dikirim.',
+
+                                'title' =>
+                                    'Dikirim',
+
+                                'desc' =>
+                                    'Pesanan telah dikirim.',
+
                             ],
+
                             'completed' => [
-                                'title' => 'Selesai',
-                                'desc' => 'Pesanan telah selesai.',
+
+                                'title' =>
+                                    'Selesai',
+
+                                'desc' =>
+                                    'Pesanan telah selesai.',
+
                             ],
+
                         ];
 
                         $statusOrder = [
-                            'pending' => 1,
-                            'processed' => 2,
-                            'shipped' => 3,
-                            'completed' => 4,
+
+                            'pending' =>
+                                1,
+
+                            'processed' =>
+                                2,
+
+                            'shipped' =>
+                                3,
+
+                            'completed' =>
+                                4,
+
                         ];
 
-                        $currentStep = $statusOrder[$order->status] ?? 0;
+                        $currentStep =
+                            $statusOrder[$order->status] ?? 0;
+
                     @endphp
 
                     @if($order->status === 'cancelled')
@@ -1195,11 +1601,15 @@
                                 <div class="timeline-dot"></div>
 
                                 <div class="timeline-title">
+
                                     Pesanan Dibatalkan
+
                                 </div>
 
                                 <div class="timeline-desc">
+
                                     Pesanan tidak akan diproses lebih lanjut.
+
                                 </div>
 
                             </div>
@@ -1213,20 +1623,31 @@
                             @foreach($statuses as $key => $status)
 
                                 @php
-                                    $step = $statusOrder[$key];
-                                    $active = $currentStep >= $step;
+
+                                    $step =
+                                        $statusOrder[$key];
+
+                                    $active =
+                                        $currentStep >= $step;
+
                                 @endphp
 
-                                <div class="timeline-item {{ $active ? 'active' : '' }}">
+                                <div
+                                    class="timeline-item {{ $active ? 'active' : '' }}"
+                                >
 
                                     <div class="timeline-dot"></div>
 
                                     <div class="timeline-title">
+
                                         {{ $status['title'] }}
+
                                     </div>
 
                                     <div class="timeline-desc">
+
                                         {{ $status['desc'] }}
+
                                     </div>
 
                                 </div>
@@ -1246,52 +1667,94 @@
     </div>
 
 </div>
+
 @endsection
 
 @push('scripts')
+
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
 
-        const cancelForm = document.querySelector('.cancel-order-form');
+    document.addEventListener(
+        'DOMContentLoaded',
+        function () {
 
-        if (cancelForm) {
+            const cancelForm =
+                document.querySelector(
+                    '.cancel-order-form'
+                );
 
-            cancelForm.addEventListener('submit', function (event) {
+            if (cancelForm) {
 
-                event.preventDefault();
+                cancelForm.addEventListener(
+                    'submit',
+                    function (event) {
 
-                if (typeof Swal !== 'undefined') {
+                        event.preventDefault();
 
-                    Swal.fire({
-                        title: 'Batalkan pesanan?',
-                        text: 'Stok produk akan dikembalikan dan pesanan tidak dapat diproses kembali.',
-                        icon: 'warning',
-                        showCancelButton: true,
-                        confirmButtonText: 'Ya, batalkan',
-                        cancelButtonText: 'Tidak',
-                        reverseButtons: true
-                    }).then((result) => {
+                        if (
+                            typeof Swal !==
+                            'undefined'
+                        ) {
 
-                        if (result.isConfirmed) {
-                            cancelForm.submit();
+                            Swal.fire({
+
+                                title:
+                                    'Batalkan pesanan?',
+
+                                text:
+                                    'Stok produk akan dikembalikan dan pesanan tidak dapat diproses kembali.',
+
+                                icon:
+                                    'warning',
+
+                                showCancelButton:
+                                    true,
+
+                                confirmButtonText:
+                                    'Ya, batalkan',
+
+                                cancelButtonText:
+                                    'Tidak',
+
+                                reverseButtons:
+                                    true
+
+                            }).then(
+                                (result) => {
+
+                                    if (
+                                        result.isConfirmed
+                                    ) {
+
+                                        cancelForm.submit();
+
+                                    }
+
+                                }
+                            );
+
+                        } else {
+
+                            if (
+                                confirm(
+                                    'Apakah Anda yakin ingin membatalkan pesanan ini?'
+                                )
+                            ) {
+
+                                cancelForm.submit();
+
+                            }
+
                         }
 
-                    });
-
-                } else {
-
-                    if (confirm(
-                        'Apakah Anda yakin ingin membatalkan pesanan ini?'
-                    )) {
-                        cancelForm.submit();
                     }
+                );
 
-                }
-
-            });
+            }
 
         }
+    );
 
-    });
 </script>
+
 @endpush
