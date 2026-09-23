@@ -326,6 +326,32 @@
         color: #fff;
     }
 
+    /* =========================
+       EDIT RESELLER BUTTON
+    ========================= */
+    .btn-edit-reseller {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background: #edf3fb;
+        border: 1px solid #d7e3f3;
+        color: #2E5B9C;
+        border-radius: 8px;
+        padding: 7px 11px;
+        font-size: .72rem;
+        font-weight: 700;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: all .2s ease;
+    }
+
+    .btn-edit-reseller:hover {
+        background: #2E5B9C;
+        border-color: #2E5B9C;
+        color: #fff;
+    }
+
     .empty-state {
         text-align: center;
         padding: 65px 20px;
@@ -798,6 +824,7 @@
                             <th>Total Pembelian</th>
                             <th>Tanggal Bergabung</th>
                             <th>Status</th>
+                            <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
 
@@ -932,6 +959,26 @@
                                         <i class="bi bi-check-circle"></i>
                                         Aktif
                                     </span>
+
+                                </td>
+
+                                {{-- =========================
+                                     AKSI EDIT RESELLER
+                                ========================== --}}
+                                <td>
+
+                                    <div class="d-flex justify-content-center">
+
+                                        <a
+                                            href="{{ route('admin.resellers.edit', $reseller) }}"
+                                            class="btn-edit-reseller"
+                                            title="Edit akun reseller"
+                                        >
+                                            <i class="bi bi-pencil-square"></i>
+                                            Edit
+                                        </a>
+
+                                    </div>
 
                                 </td>
 

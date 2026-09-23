@@ -107,17 +107,37 @@ Route::prefix('admin')
         // Reseller Management
         // ====================================================
 
+        // Daftar reseller
         Route::get('/resellers', [ResellerController::class, 'index'])
             ->name('resellers.index');
 
+        // Daftar reseller pending
         Route::get('/resellers/pending', [ResellerController::class, 'pending'])
             ->name('resellers.pending');
 
+        // Menyetujui reseller
         Route::post('/resellers/{user}/approve', [ResellerController::class, 'approve'])
             ->name('resellers.approve');
 
+        // Menolak reseller
         Route::post('/resellers/{user}/reject', [ResellerController::class, 'reject'])
             ->name('resellers.reject');
+
+        // Edit reseller
+        Route::get('/resellers/{user}/edit', [ResellerController::class, 'edit'])
+            ->name('resellers.edit');
+
+        // Update data reseller
+        Route::put('/resellers/{user}', [ResellerController::class, 'update'])
+            ->name('resellers.update');
+
+        // Reset password reseller
+        Route::post('/resellers/{user}/reset-password', [ResellerController::class, 'resetPassword'])
+            ->name('resellers.reset-password');
+
+        // Hapus reseller
+        Route::delete('/resellers/{user}', [ResellerController::class, 'destroy'])
+            ->name('resellers.destroy');
 
 
         // ====================================================
